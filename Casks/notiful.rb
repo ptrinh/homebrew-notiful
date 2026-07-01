@@ -1,6 +1,6 @@
 cask "notiful" do
-  version "1.1.2"
-  sha256 "16ddfdd5ed5dc76a707f55db22fe56446b10586eb137780dcd4788a33dd5810d"
+  version "1.1.3"
+  sha256 "909a9cb6aaff935c6f04dd8ad71f8e733ff94d51d6508ac04d8d242446a54a0a"
 
   url "https://github.com/ptrinh/Notiful/releases/download/v#{version}/Notiful.zip"
   name "Notiful"
