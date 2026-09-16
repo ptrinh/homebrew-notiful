@@ -4,20 +4,20 @@ cask "notiful" do
 
   url "https://github.com/ptrinh/Notiful/releases/download/v#{version}/Notiful.zip"
   name "Notiful"
-  desc "Menu-bar app that extracts OTPs from notifications and runs shell commands on them"
+  desc "Extract OTPs from notifications and run shell commands on them"
   homepage "https://github.com/ptrinh/Notiful"
 
   depends_on macos: :ventura
 
   app "Notiful.app"
 
-  caveats <<~EOS
-    Notiful needs Full Disk Access to read the notification database:
-      System Settings -> Privacy & Security -> Full Disk Access -> enable Notiful, then relaunch.
-  EOS
-
   zap trash: [
     "~/Library/Application Support/Notiful",
     "~/Library/Preferences/com.notiful.app.plist",
   ]
+
+  caveats <<~EOS
+    Notiful needs Full Disk Access to read the notification database:
+      System Settings -> Privacy & Security -> Full Disk Access -> enable Notiful, then relaunch.
+  EOS
 end
