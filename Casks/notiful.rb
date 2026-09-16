@@ -7,7 +7,7 @@ cask "notiful" do
   desc "Menu-bar app that extracts OTPs from notifications and runs shell commands on them"
   homepage "https://github.com/ptrinh/Notiful"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Notiful.app"
 
